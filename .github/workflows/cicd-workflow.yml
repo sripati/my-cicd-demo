@@ -1,0 +1,12 @@
+name: CICD Workflow
+
+on: workflow_dispatch
+
+jobs:
+  first-job:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: CI CD Greeting Message
+        run: echo "Welcome to GitHub Workflow"
+      - name: Print Goodbye
+        run: echo "Thanks for running the workflow"
